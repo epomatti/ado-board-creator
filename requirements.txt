@@ -1,2 +1,5 @@
 python-dotenv
 azure-devops
+autopep8
+pylint
+wheel

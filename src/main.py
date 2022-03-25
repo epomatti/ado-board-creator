@@ -34,6 +34,7 @@ for i in teams:
         break
 
 if(not team_exists):
+    print("Didn't find the team - creating a new one")
     request_team = WebApiTeam(name=team_name)
     team: WebApiTeam = core_client.create_team(request_team, project_id)
     team_id = team.id
